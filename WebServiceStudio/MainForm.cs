@@ -86,6 +86,8 @@ namespace WebServiceStudio
 
         public MainForm()
         {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
             InitializeComponent();
             wsdl = new Wsdl();
             CheckForIllegalCrossThreadCalls = false;
